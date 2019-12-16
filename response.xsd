@@ -4,8 +4,8 @@
     xmlns:ewp="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd"
     elementFormDefault="qualified"
 
-    targetNamespace="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/blob/stable-v1/endpoints/response.xsd"
-    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/blob/stable-v1/endpoints/response.xsd"
+    targetNamespace="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/tree/stable-v1"
+    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/tree/stable-v1"
 >
     <xs:import
         schemaLocation="https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-architecture/stable-v1/common-types.xsd"
