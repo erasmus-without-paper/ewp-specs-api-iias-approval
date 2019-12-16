@@ -1,0 +1,21 @@
+<iias-approval-response
+    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/blob/stable-v1/endpoints/response.xsd"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/blob/stable-v1/endpoints/response.xsd
+        https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-api-iias-approval/stable-v1/endpoints/response.xsd
+    "
+>
+
+    <approval>
+        <iia-id>0f7a5682-faf7-49a7-9cc7-ec486c49a281</iia-id>
+        <conditions-hash>05752153E6266D0538EE7CB10D612108</conditions-hash>
+    </approval>
+
+    <approval>
+        <iia-id>82a94c1684ce-947c-7ac9-cd7f-287f065a</iia-id>
+        <conditions-hash>0D80128356626E3512516C7EE750D01B</conditions-hash>
+    </approval>
+
+</iias-approval-response>
