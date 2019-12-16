@@ -1,5 +1,5 @@
 <iias-approval-response
-    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/blob/stable-v1/endpoints/response.xsd"
+    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/tree/stable-v1"
     xmlns:xml="http://www.w3.org/XML/1998/namespace"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
