@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ewp="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd"
+    elementFormDefault="qualified"
+
+    targetNamespace="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/blob/stable-v1/endpoints/response.xsd"
+    xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/blob/stable-v1/endpoints/response.xsd"
+>
+    <xs:import
+        schemaLocation="https://raw.githubusercontent.com/erasmus-without-paper/ewp-specs-architecture/stable-v1/common-types.xsd"
+        namespace="https://github.com/erasmus-without-paper/ewp-specs-architecture/blob/stable-v1/common-types.xsd" />
+
+    <xs:annotation>
+        <xs:documentation>
+            This schema is a part of the Erasmus Without Paper project. Before you start
+            using it, make sure you have read the general rules described here:
+
+            http://developers.erasmuswithoutpaper.eu/
+        </xs:documentation>
+    </xs:annotation>
+
+    <xs:element name="iias-approval-response">
+        <xs:annotation>
+            <xs:documentation>
+                This describes the format of the response returned by the 
+                EWP Interinstitutional Agreements Approval API.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="approval" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>
+                            This represents a single IIA approval element. Servers will produce one such element
+                            for each of the `iia_id` values passed in the API call that correspond to the agreements
+                            that are approved by him. If HEI does not accept the latest version of the agreement
+                            proposed by the partner, than this agreement MUST NOT be present in the response.
+                        </xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="iia-id" type="ewp:AsciiPrintableIdentifier">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        IIA identifier, as assigned by the calling partner.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="conditions-hash" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        Hash of the IIA version that is being approved. The hash is present in the IIAs API
+                                        get response, but MUST be verified by the server before sending the approval. 
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
