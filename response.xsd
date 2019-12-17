@@ -47,11 +47,15 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="conditions-hash" type="xs:string">
+                            <xs:element name="conditions-hash" type="ewp:Sha256Hex">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        Hash of the IIA version that is being approved. The hash is present in the IIAs API
-                                        get response, but MUST be verified by the server before sending the approval. 
+                                        The SHA-256 digest of the cooperation-conditions element that are being approved.
+                                        Before calculating the hash, the cooperation-conditions element should be normalized
+                                        using Exclusive XML Canonicalization.
+
+                                        The digest is present in the IIAs API get response, but MUST be verified by the server
+                                        before sending the approval.
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
