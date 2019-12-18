@@ -9,7 +9,7 @@ Summary
 -------
 
 This document describes the **Interinstitutional Agreements Approval API**.
-This API allows heis to approve agreements sent by the other partner
+This API allows HEIs to approve agreements sent by their partners
 in the [Interinstitutional Agreements API][iias-api].
 Like the [Interinstitutional Agreements API][iias-api], this API
 is not required in EWP mobility flow.
@@ -34,7 +34,7 @@ format.
 
 ### `approving_hei_id` (required)
 
-Identifier of the HEI which we want to get the approval from.
+Identifier of the HEI from which we want to get the approval.
 This MUST be the HEI covered by the server. It MUST be required, even if the server
 covers only a single HEI.
 

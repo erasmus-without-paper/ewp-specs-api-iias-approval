@@ -32,10 +32,9 @@
                 <xs:element name="approval" minOccurs="0" maxOccurs="unbounded">
                     <xs:annotation>
                         <xs:documentation>
-                            This represents a single IIA approval element. Servers will produce one such element
-                            for each of the `iia_id` values passed in the API call that correspond to the agreements
-                            that are approved by him. If HEI does not accept the latest version of the agreement
-                            proposed by the partner, than this agreement MUST NOT be present in the response.
+                            This element represents a single IIA approval. 
+                            For each of the `iia_id` values passed in the API call, server will produce one such
+                            element if and only if the corresponding agreement is approved by him.
                         </xs:documentation>
                     </xs:annotation>
                     <xs:complexType>
@@ -50,7 +49,7 @@
                             <xs:element name="conditions-hash" type="ewp:Sha256Hex">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        The SHA-256 digest of the cooperation-conditions element that are being approved.
+                                        The SHA-256 digest of the cooperation-conditions element that is being approved.
                                         Before calculating the hash, the cooperation-conditions element should be normalized
                                         using Exclusive XML Canonicalization.
 
