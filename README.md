@@ -41,8 +41,8 @@ covers only a single HEI.
 
 ### `owner_hei_id` (required)
 
-Identifier of the HEI which wants to get approval of his versions of the agreements.
-Together with `iia_id`, uniquely identifies the agreement.
+Identifier of the HEI which wants to get approval of his copies of the agreements.
+Together with `iia_id`, uniquely identifies the agreement copy.
 
 
 ### `iia_id` (repeatable, required)

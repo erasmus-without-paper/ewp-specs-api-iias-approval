@@ -34,7 +34,8 @@
                         <xs:documentation>
                             This element represents a single IIA approval. 
                             For each of the `iia_id` values passed in the API call, server will produce one such
-                            element if and only if the corresponding agreement is approved by him.
+                            element if and only if the corresponding agreement
+                            (more precisely: partner's copy of the agreement) is approved by him.
                         </xs:documentation>
                     </xs:annotation>
                     <xs:complexType>
@@ -49,9 +50,9 @@
                             <xs:element name="conditions-hash" type="ewp:Sha256Hex">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        The SHA-256 digest of the cooperation-conditions element that is being approved.
-                                        Before calculating the hash, the cooperation-conditions element should be normalized
-                                        using Exclusive XML Canonicalization.
+                                        The SHA-256 digest of the cooperation-conditions element of the agreement that is
+                                        being approved. Before calculating the hash, the cooperation-conditions element
+                                        should be normalized using Exclusive XML Canonicalization.
 
                                         The digest is present in the IIAs API get response, but MUST be verified by the server
                                         before sending the approval.
