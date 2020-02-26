@@ -62,9 +62,9 @@
                             <xs:element name="pdf" type="xs:base64Binary" minOccurs="0" maxOccurs="1">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        PDF version of the agreement, signed. This SHOULD be the PDF that was
+                                        PDF version of the agreement. This SHOULD be the PDF that was
                                         fetched from the partner via the Interinstitutional Agreements API, additionally
-                                        signed.
+                                        signed by the approving partner.
                                         
                                         This element SHOULD be skipped if the `send_pdf` request parameter value is `false`.
 
