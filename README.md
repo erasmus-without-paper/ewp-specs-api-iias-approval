@@ -93,6 +93,13 @@ Servers MUST respond with a valid XML document described by the
 information.
 
 
+Examples
+--------
+
+An example scenario of exchanging and accepting agreements is available
+in the [Interinstitutional Agreements API][iias-api] repository.
+
+
 [develhub]: http://developers.erasmuswithoutpaper.eu/
 [error-handling]: https://github.com/erasmus-without-paper/ewp-specs-architecture#error-handling
 [iias-api]: https://github.com/erasmus-without-paper/ewp-specs-api-iias
