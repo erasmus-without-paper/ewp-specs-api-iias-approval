@@ -5,6 +5,12 @@ This document describes all the changes made to the *Interinstitutional Agreemen
 document, starting from its first beta draft version.
 
 
+0.2.1
+-----
+
+* Removed invalid comment from README.
+
+
 0.2.0
 -----
 

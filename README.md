@@ -11,8 +11,6 @@ Summary
 This document describes the **Interinstitutional Agreements Approval API**.
 This API allows HEIs to approve agreements sent by their partners
 in the [Interinstitutional Agreements API][iias-api].
-Like the [Interinstitutional Agreements API][iias-api], this API
-is not required in EWP mobility flow.
 
 
 Request method
