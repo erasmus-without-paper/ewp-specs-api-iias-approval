@@ -51,7 +51,8 @@
                                 <xs:annotation>
                                     <xs:documentation>
                                         The SHA-256 digest of the cooperation-conditions element of the agreement that is
-                                        being approved. Before calculating the hash, the cooperation-conditions element
+                                        being approved but *excluding* `sending-contact` and `receiving-contact` subelements.
+                                        Before calculating the hash, the cooperation-conditions element
                                         should be normalized using Exclusive XML Canonicalization.
 
                                         The digest is present in the IIAs API get response, but MUST be verified by the server
