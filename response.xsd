@@ -61,6 +61,10 @@
                                         from the cooperation conditions received in that response. If both hashes are identical,
                                         the agreement can be approved. Hash MUST NOT be calculated from the cooperation conditions
                                         of the server's local version of the agreement.
+
+                                        Note: Server does not perform above mentioned hash verification as a result of
+                                        IIAs Approval get request. It MUST be done before and stored locally on the server
+                                        (and announced with CNR).
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
