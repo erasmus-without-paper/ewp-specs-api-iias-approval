@@ -56,7 +56,11 @@
                                         should be normalized using Exclusive XML Canonicalization.
 
                                         The digest is present in the IIAs API get response, but MUST be verified by the server
-                                        before sending the approval.
+                                        before sending the approval. For this purpose, the server has to call the IIAs get API
+                                        and compare the hash received in the response with the hash independently calculated
+                                        from the cooperation conditions received in that response. If both hashes are identical,
+                                        the agreement can be approved. Hash MUST NOT be calculated from the cooperation conditions
+                                        of the server's local version of the agreement.
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
