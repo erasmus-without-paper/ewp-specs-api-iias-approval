@@ -5,6 +5,17 @@ This document describes all the changes made to the *Interinstitutional Agreemen
 document, starting from its first beta draft version.
 
 
+1.0.0
+-----
+
+First stable release.
+
+* Add note that hash verification must be done beforehand.
+* Extend the description of the hash verification procedure.
+* Exclude sending-contact and receiving-contact when calculating hash.
+* Make sending CNRs mandatory.
+
+
 0.2.1
 -----
 
