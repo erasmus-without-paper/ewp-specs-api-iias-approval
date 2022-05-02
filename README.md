@@ -12,6 +12,9 @@ This document describes the **Interinstitutional Agreements Approval API**.
 This API allows HEIs to approve agreements sent by their partners
 in the [Interinstitutional Agreements API][iias-api].
 
+**Clients and servers MUST NOT use IIA Approval API for agreements
+that are not properly mapped (do not provide partner agreement ID).**
+
 
 Request method
 --------------
