@@ -5,6 +5,12 @@ This document describes all the changes made to the *Interinstitutional Agreemen
 document, starting from its first beta draft version.
 
 
+1.1.0
+-----
+
+* Add requirement that agreements must first be mapped.
+
+
 1.0.0
 -----
 
