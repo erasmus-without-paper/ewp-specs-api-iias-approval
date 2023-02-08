@@ -1,6 +1,5 @@
 <iias-approval-response
     xmlns="https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/tree/stable-v2"
-    xmlns:xml="http://www.w3.org/XML/1998/namespace"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         https://github.com/erasmus-without-paper/ewp-specs-api-iias-approval/tree/stable-v2
@@ -16,6 +15,7 @@
     <approval>
         <iia-id>82a94c1684ce-947c-7ac9-cd7f-287f065a</iia-id>
         <conditions-hash>3d3310935590256ecff21549b45eb4e1662b0f2a2aafcb7d91ea5f271f4d9e07</conditions-hash>
+        <pdf-file>4a483112-d306-4e77-87ff-05b823fb0e0f</pdf-file>
     </approval>
 
 </iias-approval-response>
