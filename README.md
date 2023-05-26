@@ -33,25 +33,12 @@ Parameters MUST be provided in the regular `application/x-www-form-urlencoded`
 format.
 
 
-### `approving_hei_id` (required)
-
-Identifier of the HEI from which we want to get the approval.
-This MUST be the HEI covered by the server. It MUST be required, even if the server
-covers only a single HEI.
-
-
-### `owner_hei_id` (required)
-
-Identifier of the HEI which wants to get approval of his copies of the agreements.
-Together with `iia_id`, uniquely identifies the agreement copy.
-
-
 ### `iia_id` (repeatable, required)
 
 A list of IIA identifiers **as assigned by the calling partner**, no more than
 `<max-iia-ids>`.
 
-HEIs identified by the `approving_hei_id` and `owner_hei_id` parameters
+HEI covered by the caller and HEI covered by the server
 MUST be the partners of all the referenced IIAs.
 
 This parameter is *repeatable*, so the request MAY contain multiple occurrences
@@ -75,10 +62,7 @@ Handling of invalid parameters
 
  * General [error handling rules][error-handling] apply.
 
- * Invalid `approving_hei_id` values (i.e. references to HEIs which are not covered by
-   this host) MUST result in a HTTP 400 error.
-
- * Values of `iia_id` that are not known by the server as `owner_hei_id`'s agreements
+ * Values of `iia_id` that are not known by the server as covered HEI agreements
    or not approved (yet or at all) MUST be **ignored**.
    Servers MUST return a valid (HTTP 200) XML response in such cases, but the
    response will simply not contain any information on these missing entities.
