@@ -13,7 +13,9 @@ This API allows HEIs to approve agreements sent by their partners
 in the [Interinstitutional Agreements API][iias-api].
 
 **Clients and servers MUST NOT use IIA Approval API for agreements
-that are not properly mapped (do not provide partner agreement ID).**
+that:**
+* are not properly mapped (do not provide partner agreement ID),
+* are being served using IIA API version 7 (IIA Approval version 2 MUST be used for those agreements).
 
 
 Request method
