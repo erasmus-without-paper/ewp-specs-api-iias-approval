@@ -15,7 +15,8 @@ in the [Interinstitutional Agreements API][iias-api].
 **Clients and servers MUST NOT use IIA Approval API for agreements
 that:**
  * are not properly mapped (do not provide partner agreement ID),
- * contain an element with `not-yet-defined` attribute set to "true".
+ * contain an element with `not-yet-defined` attribute set to "true",
+ * are being served using IIA API version 6 (IIA Approval version 1 MUST be used for those agreements).
 
 
 Request method
