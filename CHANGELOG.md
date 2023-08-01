@@ -5,6 +5,12 @@ This document describes all the changes made to the *Interinstitutional Agreemen
 document, starting from its first beta draft version.
 
 
+1.1.1
+-----
+
+* Do not use IIA Approval version 1 for IIA version 7.
+
+
 1.1.0
 -----
 
