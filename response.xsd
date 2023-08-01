@@ -47,20 +47,17 @@
                                     </xs:documentation>
                                 </xs:annotation>
                             </xs:element>
-                            <xs:element name="conditions-hash" type="ewp:Sha256Hex">
+                            <xs:element name="iia-hash" type="ewp:Sha256Hex">
                                 <xs:annotation>
                                     <xs:documentation>
-                                        The SHA-256 digest of the cooperation-conditions element of the agreement that is
-                                        being approved but *excluding* `sending-contact` and `receiving-contact` subelements.
-                                        Before calculating the hash, the cooperation-conditions element
-                                        should be normalized using Exclusive XML Canonicalization.
+                                        The SHA-256 digest of the `text-to-hash` element content that is obtained
+                                        by using the appropriate XSLT transformation mentioned in the API specification.
 
                                         The digest is present in the IIAs API get response, but MUST be verified by the server
                                         before sending the approval. For this purpose, the server has to call the IIAs get API
                                         and compare the hash received in the response with the hash independently calculated
-                                        from the cooperation conditions received in that response. If both hashes are identical,
-                                        the agreement can be approved. Hash MUST NOT be calculated from the cooperation conditions
-                                        of the server's local version of the agreement.
+                                        from that response. If both hashes are identical,
+                                        the agreement can be approved.
 
                                         Note: Server does not perform above mentioned hash verification as a result of
                                         IIAs Approval get request. It MUST be done before and stored locally on the server
