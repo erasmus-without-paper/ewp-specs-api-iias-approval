@@ -57,7 +57,7 @@ The `text-to-hash` element value when hashed using `SHA-256` would produce `7bdd
 
 That hash would then be inserted into an IIA Approval v2:
 ```
-<iia-hash>7bdd07b3a5088cb85da17326afa4d0514521b53ee6fc78cf7025a9ee</iia-hash>
+<iia-hash>7bdd07b3a5088cb85da17326afa4d0514521b53ee6fc78cf7025a9ee6f5b11ab</iia-hash>
 ```
 
 And should match the IIA v7 hash after partner upgrades his IIA.
