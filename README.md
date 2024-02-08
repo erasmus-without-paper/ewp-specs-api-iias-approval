@@ -29,14 +29,14 @@ A new hash has to be calculated for IIA approvals. The new element is now named 
 https://github.com/erasmus-without-paper/ewp-specs-api-iias/blob/v7.0.0/endpoints/get-response.xsd#L243-L250
 
 A snapshot of the approved v6 IIA is needed to be able to upgrade to IIA v7 and Approval v2.
-Such snapshot is stored as an IIA v6 GET API response XML of the approved agreement.
+Such a snapshot is stored as an IIA v6 GET API response XML of the approved agreement.
 
 To calculate the new hash an XSLT v6
 (https://github.com/erasmus-without-paper/ewp-specs-api-iias/blob/stable-v7/resources/xsltKit/transform_version_6.xsl)
 has to be used to transform the stored snapshot to a string that will be hashed
 (see: https://github.com/erasmus-without-paper/ewp-specs-api-iias/tree/stable-v7/resources/xsltKit).
 
-For example for a stored approved IIA:
+For example, for a stored approved IIA:
 https://github.com/erasmus-without-paper/ewp-specs-api-iias/blob/stable-v7/resources/xsltKit/get-response-v6.xml
 
 An IIA Approval v1 would contain:
