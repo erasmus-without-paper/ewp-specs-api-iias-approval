@@ -26,7 +26,7 @@ Both IIA API v7 and IIA Approval API v2 have been released and must be used toge
 Both APIs introduced new IIA hash calculation algorithm. The old hash used in IIA v6 (`conditions-hash` element) will not be used anymore.
 
 A new hash has to be calculated for IIA approvals. The new element is now named iia-hash:
-https://github.com/erasmus-without-paper/ewp-specs-api-iias/blob/v7.0.0/endpoints/get-response.xsd#L242-L249
+https://github.com/erasmus-without-paper/ewp-specs-api-iias/blob/v7.0.0/endpoints/get-response.xsd#L243-L250
 
 A snapshot of the approved v6 IIA is needed to be able to upgrade to IIA v7 and Approval v2.
 Such snapshot is stored as an IIA v6 GET API response XML of the approved agreement.
