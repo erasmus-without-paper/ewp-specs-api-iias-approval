@@ -41,23 +41,23 @@ https://github.com/erasmus-without-paper/ewp-specs-api-iias/blob/stable-v7/resou
 
 An IIA Approval v1 would contain:
 ```
-<conditions-hash>f2b01c46c8b87b895597ecc40122ff377da8df16bebfa9c0c8020fb2207a50ba</conditions-hash>
+<conditions-hash>3ecc69b81e73bf215b5b2c8da0f2b1a77dac97105171669c16c0e88a4e6be84c</conditions-hash>
 ```
 
 XSLT v6 used on that IIA GET v6 response would produce:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <iia>
-   <iia-id>0f7a5682-faf7-49a7-9cc7-ec486c49a281</iia-id>
-   <text-to-hash>_0f7a5682-faf7-49a7-9cc7-ec486c49a281__1954991__uw.edu.pl__140__hibo.no__031__Social and behavioural sciences__5__false__7__8__2014/2015__2020/2021__uw.edu.pl__140__hibo.no__2__en__C1__0314__8__2016/2017__2017/2018_</text-to-hash>
+    <iia-id>0f7a5682-faf7-49a7-9cc7-ec486c49a281</iia-id>
+    <text-to-hash>_iia-id_1=0f7a5682-faf7-49a7-9cc7-ec486c49a281__iia-id_2=1954991__cooperation-conditions.student-studies-mobility-spec.sending-hei-id=uw.edu.pl__cooperation-conditions.student-studies-mobility-spec.sending-ounit-id=140__cooperation-conditions.student-studies-mobility-spec.receiving-hei-id=hibo.no__student-studies-mobility-spec.subject-area.isced-f-code=031__student-studies-mobility-spec.subject-area.isced-clarification=Social and behavioural sciences__cooperation-conditions.student-studies-mobility-spec.total-months-per-year=5__cooperation-conditions.student-studies-mobility-spec.blended=false__cooperation-conditions.student-studies-mobility-spec.eqf-level=7__cooperation-conditions.student-studies-mobility-spec.eqf-level=8__receiving-first-academic-year-id=2014/2015__receiving-last-academic-year-id=2020/2021__cooperation-conditions.staff-teacher-mobility-spec.sending-hei-id=uw.edu.pl__cooperation-conditions.staff-teacher-mobility-spec.sending-ounit-id=140__cooperation-conditions.staff-teacher-mobility-spec.receiving-hei-id=hibo.no__cooperation-conditions.staff-teacher-mobility-spec.mobilities-per-year=2__staff-teacher-mobility-spec.recommended-language-skill.language=en__staff-teacher-mobility-spec.recommended-language-skill.cefr-level=C1__staff-teacher-mobility-spec.subject-area.isced-f-code=0314__cooperation-conditions.staff-teacher-mobility-spec.total-days-per-year=8__receiving-first-academic-year-id=2016/2017__receiving-last-academic-year-id=2017/2018_</text-to-hash>
 </iia>
 ```
 
-The `text-to-hash` element value when hashed using `SHA-256` would produce `7bdd07b3a5088cb85da17326afa4d0514521b53ee6fc78cf7025a9ee6f5b11ab`.
+The `text-to-hash` element value when hashed using `SHA-256` would produce `87b33170d7a6c6d894215641f39e7b7de36501265479e5ab3922f32d5b225033`.
 
 That hash would then be inserted into an IIA Approval v2:
 ```
-<iia-hash>7bdd07b3a5088cb85da17326afa4d0514521b53ee6fc78cf7025a9ee6f5b11ab</iia-hash>
+<iia-hash>87b33170d7a6c6d894215641f39e7b7de36501265479e5ab3922f32d5b225033</iia-hash>
 ```
 
 And should match the IIA v7 hash after partner upgrades his IIA.
