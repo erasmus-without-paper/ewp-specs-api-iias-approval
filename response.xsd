@@ -59,7 +59,7 @@
                                         from that response. If both hashes are identical,
                                         the agreement can be approved.
 
-                                        Note: Server does not perform above mentioned hash verification as a result of
+                                        Note: Server does not perform above-mentioned hash verification as a result of
                                         IIAs Approval get request. It MUST be done before and stored locally on the server
                                         (and announced with CNR).
                                     </xs:documentation>
@@ -69,13 +69,12 @@
                                 <xs:annotation>
                                     <xs:documentation>
                                         Identifier of the file containing the PDF version of the agreement.
-                                        This SHOULD be the PDF that was fetched from the partner via the IIA API,
+                                        This SHOULD be the PDF fetched from the partner via the IIA API,
                                         additionally signed by the approving partner.
 
                                         The file MUST be accessible to the receiving HEI through the EWP File API.
 
-                                        Notes for client implementers:
-
+                                        Note for client implementers:
                                         For security reasons, you may consider checking the content type of the file
                                         before displaying it in the browser.
                                     </xs:documentation>
